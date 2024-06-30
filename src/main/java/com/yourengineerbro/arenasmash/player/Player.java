@@ -86,7 +86,7 @@ public class Player {
     public static int getPlayerHandlesSize() {
         return playerHandles.size();
     }
-    // Package-private methods for testing purposes
+    // methods for testing purposes
     public static void resetPlayerCounter() {
         playerCounter = 0;
     }
