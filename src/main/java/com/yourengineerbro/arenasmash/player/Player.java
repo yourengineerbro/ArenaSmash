@@ -82,5 +82,17 @@ public class Player {
             playerHandles.add(handle);
         }
     }
+
+    public static int getPlayerHandlesSize() {
+        return playerHandles.size();
+    }
+    // Package-private methods for testing purposes
+    public static void resetPlayerCounter() {
+        playerCounter = 0;
+    }
+
+    public static void resetPlayerHandles() {
+        playerHandles = new HashSet<>();
+    }
 }
 
