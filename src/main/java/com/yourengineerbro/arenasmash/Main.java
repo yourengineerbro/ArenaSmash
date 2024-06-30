@@ -1,5 +1,6 @@
 package com.yourengineerbro.arenasmash;
 
+import com.yourengineerbro.arenasmash.arena.Arena;
 import com.yourengineerbro.arenasmash.dice.Dice;
 import com.yourengineerbro.arenasmash.player.Player;
 
@@ -17,6 +18,8 @@ public class Main {
         Dice attackDice = new Dice(6);
         Dice defendDice = new Dice(6);
 
+        Arena arena = new Arena(player1, player2, attackDice, defendDice);
+        arena.fight(scanner);
         scanner.close();
     }
 
