@@ -1,10 +1,13 @@
 package com.yourengineerbro.arenasmash.player;
 
+import java.util.HashSet;
+
 public class Player {
     // Decision if needed to change byte to int
     private final byte playerID;
     private static byte playerCounter = 0;
     // to check if playerHandles can be specifically declared non-final.
+    private static HashSet<String> playerHandles = new HashSet<>();
     private String playerHandle;
     private int health;
     private int strength;
@@ -68,5 +71,16 @@ public class Player {
         return health > 0;
     }
 
+    public static boolean contains(String handle) {
+        return playerHandles.contains(handle);
+    }
+
+    public static void addPlayerHandle(String handle) {
+        if(Player.contains(handle)) {
+            System.out.println("Player handle must be unique");
+        } else {
+            playerHandles.add(handle);
+        }
+    }
 }
 
