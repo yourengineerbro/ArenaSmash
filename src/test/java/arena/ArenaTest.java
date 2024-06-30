@@ -20,12 +20,6 @@ import static org.mockito.Mockito.when;
 @ExtendWith(MockitoExtension.class)
 public class ArenaTest {
 
-
-    private Player mockPlayer1;
-
-
-    private Player mockPlayer2;
-
     @Mock
     private Dice mockAttackDice;
 
@@ -41,9 +35,8 @@ public class ArenaTest {
 
     @BeforeEach
     public void setUp() {
-        mockPlayer1 = new Player("Player1", 200, 5, 36);
-        mockPlayer2 = new Player("Player2", 90, 4, 35);
-
+        Player mockPlayer1 = new Player("Player1", 200, 5, 36);
+        Player mockPlayer2 = new Player("Player2", 90, 4, 35);
 
         // Initialize Arena with mock objects
         arena = new Arena(mockPlayer1, mockPlayer2, mockAttackDice, mockDefendDice);
@@ -59,18 +52,10 @@ public class ArenaTest {
 
     @Test
     public void testFight_Player1Wins() {
-        // Setup mock player behaviors
-//        when(mockPlayer1.getHealth()).thenReturn(100);  // Player 1 has higher health
-//        when(mockPlayer2.getHealth()).thenReturn(50);   // Player 2 has lower health
-//        when(mockPlayer1.getPlayerHandle()).thenReturn("Player1");
-//        when(mockPlayer2.getPlayerHandle()).thenReturn("Player2");
 
         // Setup mock dice rolls
         when(mockAttackDice.roll()).thenReturn(6);  // Mock attack dice roll
         when(mockDefendDice.roll()).thenReturn(3);  // Mock defend dice roll
-
-        // Mock user input via scanner (not needed for this test)
-//        mockUserInput();
 
         // Call the fight method
         arena.fight(mockScanner);
@@ -81,18 +66,10 @@ public class ArenaTest {
 
     @Test
     public void testFight_Player2Wins() {
-        // Setup mock player behaviors
-//        when(mockPlayer1.getHealth()).thenReturn(50);   // Player 1 has lower health
-//        when(mockPlayer2.getHealth()).thenReturn(100);  // Player 2 has higher health
-//        when(mockPlayer1.getPlayerHandle()).thenReturn("Player1");
-//        when(mockPlayer2.getPlayerHandle()).thenReturn("Player2");
 
         // Setup mock dice rolls
         when(mockAttackDice.roll()).thenReturn(6);  // Mock attack dice roll
         when(mockDefendDice.roll()).thenReturn(2);  // Mock defend dice roll
-
-        // Mock user input via scanner (not needed for this test)
-//        mockUserInput();
 
         // Call the fight method
         arena.fight(mockScanner);
@@ -100,11 +77,6 @@ public class ArenaTest {
         // Assert the winner based on expected outcome
         assertEquals("Player2 wins the match!", getConsoleOutput().trim());
     }
-
-//    private void mockUserInput() {
-//        // Mock user input via scanner
-//        when(mockScanner.nextLine()).thenReturn("");
-//    }
 
     private String getConsoleOutput() {
         String capturedOutput = outputStream.toString();
