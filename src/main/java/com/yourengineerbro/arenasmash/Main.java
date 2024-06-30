@@ -42,7 +42,6 @@ public class Main {
         int strength = scanner.nextInt();
         System.out.print("Attack: ");
         int attack = scanner.nextInt();
-        scanner.nextLine();
         return new Player(handle, health, strength, attack);
     }
 }
