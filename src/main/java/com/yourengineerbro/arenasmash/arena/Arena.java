@@ -23,8 +23,23 @@ public class Arena {
         Player defender = attacker == player1 ? player2 : player1;
 
         while (attacker.isAlive() && defender.isAlive()) {
+
+            System.out.println(attacker.getPlayerHandle() + "'s turn to attack.");
+            System.out.print("Press Enter to roll the attack dice...");
+            scanner.nextLine();
+
             int attackRoll = attackDice.roll();
+            System.out.println(attacker.getPlayerHandle() + " rolls the attack dice: " + attackRoll);
+
+            System.out.println();
+
+            System.out.println(defender.getPlayerHandle() + "'s turn to defend.");
+            System.out.print("Press Enter to roll the defend dice...");
+            scanner.nextLine();
             int defendRoll = defendDice.roll();
+            System.out.println(defender.getPlayerHandle() + " rolls the defend dice: " + defendRoll);
+
+            System.out.println();
 
             int damageDealt = attacker.getAttack() * attackRoll;
             int damageDefended = defender.getStrength() * defendRoll;
@@ -32,6 +47,11 @@ public class Arena {
 
             defender.setHealth(Math.max(0, defender.getHealth() - damageInflicted));
 
+            System.out.println(attacker.getPlayerHandle() + " attacks with damage " + damageDealt + " (rolled " + attackRoll + ")");
+            System.out.println(defender.getPlayerHandle() + " defends with " + damageDefended + " (rolled " + defendRoll + ")");
+            System.out.println(defender.getPlayerHandle() + " receives " + damageInflicted + " damage, health now " + defender.getHealth());
+
+            System.out.println();
 
             // Swap roles
             Player temp = attacker;

@@ -8,10 +8,15 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-
+        // To create a constant file
+        System.out.println("Welcome to the ArenaSmash!!");
         Scanner scanner = new Scanner(System.in);
 
+        // Input player details
+        System.out.println("Enter details for Player 1:");
         Player player1 = createPlayer(scanner);
+
+        System.out.println("Enter details for Player 2:");
         Player player2 = createPlayer(scanner);
 
         // Assuming here that players roll the dice simultaneously thus required 2 dice.
@@ -19,6 +24,8 @@ public class Main {
         Dice defendDice = new Dice(6);
 
         Arena arena = new Arena(player1, player2, attackDice, defendDice);
+        System.out.print("Press Enter to start the game");
+        scanner.nextLine();
         arena.fight(scanner);
         scanner.close();
     }
