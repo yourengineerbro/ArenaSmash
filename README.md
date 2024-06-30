@@ -35,7 +35,7 @@ PreRequisites : Java 11, Maven and IntelliJ installed.
     to get JAR file created.
 5) This will generate JAR into your target folder.
 6) Run this command from your project root:
-```java -cp .\target\ArenaSmash-1.0-SNAPSHOT.jar com.yourengineerbro.arenasmash.Main```
+```java -jar .\target\ArenaSmash-1.0-SNAPSHOT.jar```
 7) The Game will starts on the terminal.
 
 ### Way Forward
