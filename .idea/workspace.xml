@@ -5,11 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="628f9a0b-b641-4421-9355-f2bb738f4f46" name="Changes" comment="Initial Commit">
-      <change afterPath="$PROJECT_DIR$/src/test/java/arena/ArenaTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/dice/DiceTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/app/MainTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/yourengineerbro/arenasmash/dice/Dice.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yourengineerbro/arenasmash/dice/Dice.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/arena/ArenaTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/arena/ArenaTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,10 +36,13 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Application.Main.executor": "Run",
     "JUnit.ArenaTest.executor": "Run",
     "JUnit.ArenaTest.testFight_Player1Wins.executor": "Run",
     "JUnit.DiceTest.executor": "Coverage",
+    "JUnit.MainTest.executor": "Run",
     "JUnit.PlayerTest.executor": "Coverage",
+    "JUnit.java in ArenaSmash.executor": "Coverage",
     "Maven.ArenaSmash [package].executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "feature/test-cases",
@@ -54,7 +55,20 @@
       <recent name="player" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.java in ArenaSmash">
+  <component name="RunManager" selected="JUnit.MainTest">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.yourengineerbro.arenasmash.app.Main" />
+      <module name="ArenaSmash" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.yourengineerbro.arenasmash.app.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="ArenaTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="ArenaSmash" />
       <extension name="coverage">
@@ -86,31 +100,16 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="DiceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="MainTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="ArenaSmash" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="dice.*" />
+          <option name="PATTERN" value="app.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="dice" />
-      <option name="MAIN_CLASS_NAME" value="dice.DiceTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="PlayerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="ArenaSmash" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="player.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="player" />
-      <option name="MAIN_CLASS_NAME" value="player.PlayerTest" />
+      <option name="PACKAGE_NAME" value="app" />
+      <option name="MAIN_CLASS_NAME" value="app.MainTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -126,11 +125,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.java in ArenaSmash" />
+        <item itemvalue="JUnit.MainTest" />
+        <item itemvalue="Application.Main" />
         <item itemvalue="JUnit.ArenaTest" />
+        <item itemvalue="JUnit.java in ArenaSmash" />
         <item itemvalue="JUnit.ArenaTest.testFight_Player1Wins" />
-        <item itemvalue="JUnit.DiceTest" />
-        <item itemvalue="JUnit.PlayerTest" />
       </list>
     </recent_temporary>
   </component>
@@ -173,11 +172,12 @@
     <SUITE FILE_PATH="coverage/ArenaSmash$DiceTest.ic" NAME="DiceTest Coverage Results" MODIFIED="1719744191718" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true">
       <FILTER>dice.*</FILTER>
     </SUITE>
-    <SUITE FILE_PATH="coverage/ArenaSmash$ArenaTest.ic" NAME="ArenaTest Coverage Results" MODIFIED="1719747312733" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true">
+    <SUITE FILE_PATH="coverage/ArenaSmash$ArenaTest.ic" NAME="ArenaTest Coverage Results" MODIFIED="1719748714508" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true">
       <FILTER>arena.*</FILTER>
     </SUITE>
     <SUITE FILE_PATH="coverage/ArenaSmash$PlayerTest.ic" NAME="PlayerTest Coverage Results" MODIFIED="1719743383733" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true">
       <FILTER>player.*</FILTER>
     </SUITE>
+    <SUITE FILE_PATH="coverage/ArenaSmash$java_in_ArenaSmash.ic" NAME="java in ArenaSmash Coverage Results" MODIFIED="1719748832704" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true" />
   </component>
 </project>

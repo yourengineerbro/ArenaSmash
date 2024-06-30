@@ -3,6 +3,7 @@ package arena;
 import com.yourengineerbro.arenasmash.arena.Arena;
 import com.yourengineerbro.arenasmash.dice.Dice;
 import com.yourengineerbro.arenasmash.player.Player;
+import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
@@ -50,6 +51,12 @@ public class ArenaTest {
         System.setOut(new PrintStream(outputStream));
     }
 
+    @AfterEach
+    public void close() {
+        System.setIn(System.in);
+        System.setOut(System.out);
+    }
+
     @Test
     public void testFight_Player1Wins() {
         // Setup mock player behaviors
@@ -63,7 +70,7 @@ public class ArenaTest {
         when(mockDefendDice.roll()).thenReturn(3);  // Mock defend dice roll
 
         // Mock user input via scanner (not needed for this test)
-        mockUserInput();
+//        mockUserInput();
 
         // Call the fight method
         arena.fight(mockScanner);
@@ -85,7 +92,7 @@ public class ArenaTest {
         when(mockDefendDice.roll()).thenReturn(2);  // Mock defend dice roll
 
         // Mock user input via scanner (not needed for this test)
-        mockUserInput();
+//        mockUserInput();
 
         // Call the fight method
         arena.fight(mockScanner);
@@ -94,10 +101,10 @@ public class ArenaTest {
         assertEquals("Player2 wins the match!", getConsoleOutput().trim());
     }
 
-    private void mockUserInput() {
-        // Mock user input via scanner
-        when(mockScanner.nextLine()).thenReturn("");
-    }
+//    private void mockUserInput() {
+//        // Mock user input via scanner
+//        when(mockScanner.nextLine()).thenReturn("");
+//    }
 
     private String getConsoleOutput() {
         String capturedOutput = outputStream.toString();
