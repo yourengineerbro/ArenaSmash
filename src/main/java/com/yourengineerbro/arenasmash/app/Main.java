@@ -5,18 +5,20 @@ import com.yourengineerbro.arenasmash.dice.Dice;
 import com.yourengineerbro.arenasmash.player.Player;
 
 import java.util.Scanner;
+;import static com.yourengineerbro.arenasmash.util.Constants.*;
+import static com.yourengineerbro.arenasmash.util.Constants.Error.UNIQUE_HANDLE;
 
 public class Main {
     public static void main(String[] args) {
         // To create a constant file
-        System.out.println("Welcome to the ArenaSmash!!");
+        System.out.println(WELCOME_MESSAGE);
         Scanner scanner = new Scanner(System.in);
 
         // Input player details
-        System.out.println("Enter details for Player 1:");
+        System.out.println(ASK_PLAYER1);
         Player player1 = createPlayer(scanner);
 
-        System.out.println("Enter details for Player 2:");
+        System.out.println(ASK_PLAYER2);
         Player player2 = createPlayer(scanner);
 
         // Assuming here that players roll the dice simultaneously thus required 2 dice.
@@ -24,8 +26,10 @@ public class Main {
         Dice defendDice = new Dice(6);
 
         Arena arena = new Arena(player1, player2, attackDice, defendDice);
-        System.out.print("Press Enter to start the game");
+        System.out.print(ASK_TO_START);
         scanner.nextLine();
+        System.out.println();
+        // TO DO: ability to restart the game
         arena.fight(scanner);
         scanner.close();
     }
@@ -38,9 +42,10 @@ public class Main {
         while(true) {
             handle = scanner.next();
             // See if we can use StringBuilder Here
-            handle = handle.trim();
+            handle = handle.trim().toLowerCase();
             if (Player.contains(handle)) {
-                System.out.println("Player handle must be unique");
+                System.out.println(UNIQUE_HANDLE);
+                System.out.print("Reenter handle: ");
             } else {
                 Player.addPlayerHandle(handle);
                 break;

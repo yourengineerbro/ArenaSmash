@@ -4,11 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="628f9a0b-b641-4421-9355-f2bb738f4f46" name="Changes" comment="Initial Commit">
-      <change afterPath="$PROJECT_DIR$/src/test/java/app/MainTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/arena/ArenaTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/arena/ArenaTest.java" afterDir="false" />
-    </list>
+    <list default="true" id="628f9a0b-b641-4421-9355-f2bb738f4f46" name="Changes" comment="Initial Commit" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -45,6 +41,7 @@
     "JUnit.java in ArenaSmash.executor": "Coverage",
     "Maven.ArenaSmash [package].executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "git-widget-placeholder": "feature/test-cases",
     "ignore.virus.scanning.warn.message": "true",
     "kotlin-language-version-configured": "true"
@@ -55,7 +52,7 @@
       <recent name="player" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.MainTest">
+  <component name="RunManager" selected="Application.Main">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.yourengineerbro.arenasmash.app.Main" />
       <module name="ArenaSmash" />
@@ -125,8 +122,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.MainTest" />
         <item itemvalue="Application.Main" />
+        <item itemvalue="JUnit.MainTest" />
         <item itemvalue="JUnit.ArenaTest" />
         <item itemvalue="JUnit.java in ArenaSmash" />
         <item itemvalue="JUnit.ArenaTest.testFight_Player1Wins" />

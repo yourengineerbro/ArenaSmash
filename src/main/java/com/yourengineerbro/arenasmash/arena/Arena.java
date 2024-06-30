@@ -5,6 +5,9 @@ import com.yourengineerbro.arenasmash.player.Player;
 
 import java.util.Scanner;
 
+import static com.yourengineerbro.arenasmash.util.Constants.Game.ROLL_ATTACK_DICE;
+import static com.yourengineerbro.arenasmash.util.Constants.Game.ROLL_DEFEND_DICE;
+
 public class Arena {
     private final Player player1;
     private final Player player2;
@@ -25,7 +28,7 @@ public class Arena {
         while (attacker.isAlive() && defender.isAlive()) {
 
             System.out.println(attacker.getPlayerHandle() + "'s turn to attack.");
-            System.out.print("Press Enter to roll the attack dice...");
+            System.out.print(ROLL_ATTACK_DICE);
             scanner.nextLine();
 
             int attackRoll = attackDice.roll();
@@ -34,7 +37,7 @@ public class Arena {
             System.out.println();
 
             System.out.println(defender.getPlayerHandle() + "'s turn to defend.");
-            System.out.print("Press Enter to roll the defend dice...");
+            System.out.print(ROLL_DEFEND_DICE);
             scanner.nextLine();
 
             int defendRoll = defendDice.roll();

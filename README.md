@@ -2,6 +2,7 @@
 
 ## Rules of the Game:
 1) Every Player is defined by a “health” attribute, “strength” attribute and an “attack” attribute - all positive integers.
+Details like handle(which is unique for each player), health, strength and attack has to be provided first for each player.
 2) The player dies if his health attribute touches 0. 
 3) Any two player can fight a match in the arena. Players attack in turns. Attacking player rolls the attacking dice and the defending player rolls the defending dice. 
 4) The “attack”  value multiplied by the outcome of the  attacking dice roll is the damage created by the attacker. The defender “strength” value, multiplied by the outcome of the defending dice is the damage defended by the defender.
@@ -36,6 +37,12 @@ PreRequisites : Java 11, Maven and IntelliJ installed.
 6) Run this command from your project root:
 ```java -cp .\target\ArenaSmash-1.0-SNAPSHOT.jar com.yourengineerbro.arenasmash.Main```
 7) The Game will starts on the terminal.
+
+### Way Forward
+1) Making game to restart from scratch.
+2) Storing player's information in a file, so that player details can be loaded whenever game starts.
+3) Using sophisticated techniques to generate random number.
+
 
 ### Contact
 For any further clarification, feel free to reach out to me at guptaaman9981@gmail.com
