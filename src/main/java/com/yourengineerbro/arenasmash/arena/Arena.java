@@ -36,6 +36,7 @@ public class Arena {
             System.out.println(defender.getPlayerHandle() + "'s turn to defend.");
             System.out.print("Press Enter to roll the defend dice...");
             scanner.nextLine();
+
             int defendRoll = defendDice.roll();
             System.out.println(defender.getPlayerHandle() + " rolls the defend dice: " + defendRoll);
 

@@ -1,4 +1,4 @@
-package com.yourengineerbro.arenasmash;
+package com.yourengineerbro.arenasmash.app;
 
 import com.yourengineerbro.arenasmash.arena.Arena;
 import com.yourengineerbro.arenasmash.dice.Dice;
@@ -52,6 +52,7 @@ public class Main {
         int strength = scanner.nextInt();
         System.out.print("Attack: ");
         int attack = scanner.nextInt();
+        scanner.nextLine();
         return new Player(handle, health, strength, attack);
     }
 }
