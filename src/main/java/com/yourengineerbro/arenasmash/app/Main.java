@@ -10,7 +10,7 @@ import static com.yourengineerbro.arenasmash.util.Constants.Error.UNIQUE_HANDLE;
 
 public class Main {
     public static void main(String[] args) {
-        // To create a constant file
+
         System.out.println(WELCOME_MESSAGE);
         Scanner scanner = new Scanner(System.in);
 

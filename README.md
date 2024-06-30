@@ -42,6 +42,7 @@ PreRequisites : Java 11, Maven and IntelliJ installed.
 1) Making game to restart from scratch.
 2) Storing player's information in a file, so that player details can be loaded whenever game starts.
 3) Using sophisticated techniques to generate random number.
+4) Accepting Inputs via ports for each user connected in same network.
 
 
 ### Contact

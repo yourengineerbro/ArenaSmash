@@ -3,7 +3,7 @@ package com.yourengineerbro.arenasmash.player;
 import java.util.HashSet;
 
 public class Player {
-    // Decision if needed to change byte to int
+    // Decision if needed to change byte to int (if more players)
     private final byte playerID;
     private static byte playerCounter = 0;
     // to check if playerHandles can be specifically declared non-final.
@@ -82,11 +82,11 @@ public class Player {
             playerHandles.add(handle);
         }
     }
-
+    // methods for testing purposes
     public static int getPlayerHandlesSize() {
         return playerHandles.size();
     }
-    // methods for testing purposes
+
     public static void resetPlayerCounter() {
         playerCounter = 0;
     }
