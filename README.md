@@ -40,7 +40,7 @@ PreRequisites : Java 11, Maven and IntelliJ installed.
 
 ### Working Demo:
 
-![arenasmash_demo.png](arenasmash_demo.png)
+![arenasmash_demo.PNG](arenasmash_demo.PNG)
 
 ### Way Forward
 1) Making game to restart from scratch.
