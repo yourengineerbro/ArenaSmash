@@ -38,6 +38,10 @@ PreRequisites : Java 11, Maven and IntelliJ installed.
 ```java -jar .\target\ArenaSmash-1.0-SNAPSHOT.jar```
 7) The Game will starts on the terminal.
 
+### Working Demo:
+
+![arenasmash_demo.png](arenasmash_demo.png)
+
 ### Way Forward
 1) Making game to restart from scratch.
 2) Storing player's information in a file, so that player details can be loaded whenever game starts.
